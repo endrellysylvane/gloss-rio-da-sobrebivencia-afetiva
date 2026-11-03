@@ -242,7 +242,7 @@ section#comprar{background:linear-gradient(180deg,#390f18 0,#100909 100%);color:
 </ul>
 <div class="price">R$ 29,90</div>
 <p class="small">Pagamento único. Preço de lançamento.</p>
-<a class="btn buy" href="https://pay.kiwify.com.br/riGidSl">ACESSAR O GLOSSÁRIO</a>
+<a class="btn buy" href="#comprar">ACESSAR O GLOSSÁRIO</a>
 </div>
 </div>
 </section>
@@ -291,7 +291,7 @@ section#comprar{background:linear-gradient(180deg,#390f18 0,#100909 100%);color:
 document.querySelectorAll('.band .row').forEach(function(r){var s=r.firstElementChild;for(var i=0;i<2;i++){var c=s.cloneNode(true);c.setAttribute('aria-hidden','true');r.appendChild(c);}});
 document.querySelector('.band').classList.add('on');
 // Cole aqui o link do seu checkout (Hotmart, Kiwify, etc.)
-var CHECKOUT_URL = "";
+var CHECKOUT_URL = "https://pay.kiwify.com.br/riGidSl";
 if (CHECKOUT_URL) document.querySelectorAll('.buy').forEach(function(a){a.href = CHECKOUT_URL;});
 document.querySelectorAll('.opt-btn').forEach(function(b){b.addEventListener('click',function(){
  var item=b.closest('.opt'), wasOpen=item.classList.contains('open');
